@@ -11,9 +11,8 @@ User Name: **Student**
 Password: **Pa55w.rd**
 
 
-
 ## Exercise 1: Creating the vms
-  
+ 
 
 #### Task 1: Create the vms
 
@@ -111,15 +110,16 @@ The main tasks for this exercise are as follows:
 
     - Password: **Pa55w.rd1234**
 
-3. Once you are connected to az3000401-vm2-R via the Remote Desktop session, Run these commands below 
+3. Once you are connected to az3000401-vm2-R via the Remote Desktop session, 
+Run these commands below on powershell of that VM
 
 ---
  
-Set-NetFirewallProfile -Enabled False
+**Set-NetFirewallProfile -Enabled False
 
-Install-WindowsFeature Routing, RSAT-RemoteAccess
+**Install-WindowsFeature Routing, RSAT-RemoteAccess**
 
-rrasmgmt.msc
+**rrasmgmt.msc**
 
 ----
 
