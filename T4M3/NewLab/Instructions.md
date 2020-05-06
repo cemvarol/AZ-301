@@ -115,7 +115,7 @@ Run these commands below on powershell of that VM
 
 ---
  
-**Set-NetFirewallProfile -Enabled False
+**Set-NetFirewallProfile -Enabled False**
 
 **Install-WindowsFeature Routing, RSAT-RemoteAccess**
 
