@@ -149,14 +149,9 @@ The main tasks for this exercise are as follows:
 
     - Password: **Pa55w.rd1234**
 
-3. In the Remote Desktop session to az3000401-vm1, run the command below
+3. In the Remote Desktop session to az3000401-vm1, run the **powershell** command below on that vm
 
-netsh advfirewall set allprofiles state off
-
-
-> **ALSO** Please do the same thing to the other machine **az3000402-vm1** 
-
-netsh advfirewall set allprofiles state off
+**Set-NetFirewallProfile -Enabled False**
 
 #### Task 2: Test service chaining between peered virtual networks
   
@@ -173,6 +168,8 @@ netsh advfirewall set allprofiles state off
 1. In the **Windows PowerShell** window, run the following:
 
    ```pwsh
+   Set-NetFirewallProfile -Enabled False
+   
    Test-NetConnection -ComputerName 10.0.0.4 -TraceRoute
    ```
 
