@@ -7,3 +7,7 @@ https://raw.githubusercontent.com/mspnp/template-building-blocks/v2.2.0/template
 That's why I have designed a new solution.
 
 Please follow the instructions.
+
+You can also see what happens if you follow the instructions from here.
+
+
