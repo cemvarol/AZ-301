@@ -66,9 +66,9 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Enable IP forwarding 
   
-1. In Microsoft Edge, navigate to the **az3000401-vm2-RVMNic** blade (the NIC of **az3000401-vm2-R**)
+1. In Microsoft Edge, navigate to the **VM-RVMNic** blade (the NIC of **VM-R**)
 
-2. On the **az3000401-vm2-RVMNic** blade, modify the **IP configurations** by setting **IP forwarding** to **Enabled**.
+2. On the **VM-RVMNic** blade, modify the **IP configurations** by setting **IP forwarding** to **Enabled**.
 
 
 #### Task 2: Configure user defined routing 
@@ -102,7 +102,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 3: Configure routing on an Azure VM running Windows Server 2016
 
-1. On the lab computer, from the Azure portal, start a Remote Desktop session to **az3000401-vm2-R** Azure VM. 
+1. On the lab computer, from the Azure portal, start a Remote Desktop session to **VM-R** Azure VM. 
 
 2. When prompted to authenticate, specify the following credentials:
 
@@ -110,7 +110,7 @@ The main tasks for this exercise are as follows:
 
     - Password: **Pa55w.rd1234**
 
-3. Once you are connected to az3000401-vm2-R via the Remote Desktop session, 
+3. Once you are connected to VM-R via the Remote Desktop session, 
 Run these commands below on **powershell** console of that VM
 
 ---
