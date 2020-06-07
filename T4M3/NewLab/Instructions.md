@@ -29,19 +29,19 @@ The task for this exercise is as follows:
 
 #### Task 1: Configure VNet peering for both virtual networks
   
-1. In the Microsoft Edge window displaying the Azure portal, navigate to the **az3000401-vnet** virtual network blade.
+1. In the Microsoft Edge window displaying the Azure portal, navigate to the **AADLab0801-vnet2** virtual network blade.
 
-1. From the **az3000401-vnet** blade, create a VNet peering with the following settings:
+1. From the **AADLab0801-vnet2** blade, create a VNet peering with the following settings:
 
-    - Name of the peering from the first virtual network to the second virtual network: **az3000401-vnet-to-az3000402-vnet**
+    - Name of the peering from the first virtual network to the second virtual network: **AADLab0801-vnet2-to-AADLab0801-vnet1**
 
     - Virtual network deployment model: **Resource manager**
 
     - Subscription: the name of the Azure subscription you are using for this lab
 
-    - Virtual network: **az3000402-vnet**
+    - Virtual network: **AADLab0801-vnet1**
     
-    - Name of the peering from the second virtual network to the first virtual network: **az3000402-vnet-to-az3000401-vnet**    
+    - Name of the peering from the second virtual network to the first virtual network: **AADLab0801-vnet1-to-AADLab0801-vnet2**    
     
     - Allow virtual network access from the first virtual network to the second virtual nework: **Enabled**
     
@@ -75,11 +75,11 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, create a new route table with the following settings:
 
-    - Name: **az3000402-rt1**
+    - Name: **AADLab0801-rt1**
 
     - Subscription: the name of the Azure subscription you use for this lab
 
-    - Resource group: **az3000402-LabRG**
+    - Resource group: **AADLab0801-LabRG**
 
     - Location: the same Azure region in which you created the virtual networks
   
@@ -87,9 +87,9 @@ The main tasks for this exercise are as follows:
     
     Once the creation of the route table has finished, click on **Go to resource**
 
-2. In the Azure portal, on the route table az3000402-rt1 that was created on the previous step, click on **Routes** under **Settings** and add a route with the following settings: 
+2. In the Azure portal, on the route table AADLab0801-rt1 that was created on the previous step, click on **Routes** under **Settings** and add a route with the following settings: 
 
-    - Route name: **custom-route-to-az3000401-vnet**
+    - Route name: **custom-route-to-AADLab0801-vnet2**
 
     - Address prefix: **10.0.0.0/22**
 
@@ -97,7 +97,7 @@ The main tasks for this exercise are as follows:
 
     - Next hop address: **10.0.1.4**
 
-3. In the Azure portal, associate the route table with the **subnet-1** of the **az3000402-vnet**.
+3. In the Azure portal, associate the route table with the **subnet-1** of the **AADLab0801-vnet1**.
 
 
 #### Task 3: Configure routing on an Azure VM running Windows Server 2016
@@ -155,7 +155,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 2: Test service chaining between peered virtual networks
   
-1. On the lab computer, from the Azure portal, start a Remote Desktop session to **az3000402-vm1** Azure VM. 
+1. On the lab computer, from the Azure portal, start a Remote Desktop session to **AADLab0801-vm1** Azure VM. 
 
 1. When prompted to authenticate, specify the following credentials:
 
@@ -163,7 +163,7 @@ The main tasks for this exercise are as follows:
 
     - Password: **Pa55w.rd1234**
 
-1. Once you are connected to az3000402-vm1 via the Remote Desktop session, start **Windows PowerShell**.
+1. Once you are connected to AADLab0801-vm1 via the Remote Desktop session, start **Windows PowerShell**.
 
 1. In the **Windows PowerShell** window, run the following:
 
